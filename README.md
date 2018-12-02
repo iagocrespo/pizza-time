@@ -1,4 +1,4 @@
-# Prueba React
+# Pizza Time
 
 1. Fork me.
 2. Clona tu versión del proyecto
