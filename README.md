@@ -7,8 +7,8 @@
 5. Ejecuta el script `start` o el `dev`
 
 ```
-❯ git clone git@github.com:<USUARIO>/oferta-del-dia.git
-❯ cd oferta-del-dia
+❯ git clone git@github.com:<USUARIO>/pizza-time.git
+❯ cd pizza-time
 ❯ npm install
 ❯ npm start
 ```
@@ -36,4 +36,4 @@ Debéis comittear cada cambio localmente y como mínimo debe haber un commit por
 
 Recordad que `console.log` y la extensión de React para Firefox que muestra el Virtual DOM son de gran ayuda para poder llegar a la solución.
 
-Happy Hacking! 😃🤖👾🚀
+### Happy Hacking! 😃🤖👾🚀
