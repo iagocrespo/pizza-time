@@ -4,11 +4,13 @@ import PizzaIngredient from "./PizzaIngredient";
 
 class PizzaIngredients extends React.Component {
   render() {
-    console.log(this.props.ingredients);
     return (
       <ul>
         {Object.keys(this.props.ingredients).map(ingredientKey => (
-          <PizzaIngredient />
+          <PizzaIngredient
+            updateIngredient={this.props.updateIngredient}
+            ingredient={this.props.ingredients[ingredientKey]}
+          />
         ))}
       </ul>
     );

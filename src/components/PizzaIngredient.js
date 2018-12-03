@@ -1,8 +1,17 @@
 import React from "react";
 
 class PizzaIngredient extends React.Component {
+  handleClick = _event => {
+    this.props.updateIngredients();
+  };
+
   render() {
-    return <h2>chiesss</h2>;
+    return (
+      <li
+        className={this.props.ingredient.selected ? "marked" : ""}
+        onClick={this.handleClick}
+      />
+    );
   }
 }
 

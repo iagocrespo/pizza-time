@@ -45,11 +45,27 @@ class Pizza extends React.Component {
     }
   };
 
+  updateIngredient = ingredientKey => {
+    // 1. Take a copy of the existing `state`
+    const updateIngredients = { ...this.state.ingredients };
+    // 2. Update our updateIngredients in updatedFishes
+    if (updateIngredients[ingredientKey].selected) {
+      updateIngredients[ingredientKey].selected = false;
+    } else {
+      updateIngredients[ingredientKey].selected = true;
+    }
+    // 3. Set updatedFishes as the new `state`
+    this.setState({ ingredients: updateIngredients });
+  };
+
   render() {
     return (
       <div className="content">
         <PizzaHeader />
-        <PizzaIngredients ingredients={this.state.ingredients} />
+        <PizzaIngredients
+          ingredients={this.state.ingredients}
+          updateIngredient={this.updateIngredient}
+        />
         {/*<PizzaTotal />*/}
       </div>
     );
