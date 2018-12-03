@@ -3,7 +3,7 @@ import { formatPrice } from "../helpers";
 
 class PizzaIngredient extends React.Component {
   handleClick = _event => {
-    this.props.updateIngredients();
+    this.props.updateIngredient(this.props.ingredientKey);
   };
 
   render() {
