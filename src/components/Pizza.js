@@ -1,3 +1,21 @@
+import React from "react";
+
+import PizzaHeader from "./PizzaHeader";
+
+class Pizza extends React.Component {
+  render() {
+    return (
+      <div className="content">
+        <PizzaHeader />
+        {/*<PizzaIngredients />
+        <PizzaTotal />*/}
+      </div>
+    );
+  }
+}
+
+export default Pizza;
+
 /* TODO: Create the Pizza Component consisting of:
   - A `div` with a class `content`
     - A `PizzaHeader` component
