@@ -1,3 +1,13 @@
+import React from "react";
+
+class PizzaIngredient extends React.Component {
+  render() {
+    return <h2>chiesss</h2>;
+  }
+}
+
+export default PizzaIngredient;
+
 /* TODO: Create the PizzaIngredient Component consisting of:
   - An `li` with
     class `{this.props.ingredient.selected ? "marked" : ""}`
