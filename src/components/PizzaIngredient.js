@@ -7,6 +7,7 @@ class PizzaIngredient extends React.Component {
   };
 
   render() {
+    /* TODO: Reducir `this.props.yLoQueVengaDetras` con los elementos que usamos */
     return (
       <li
         className={this.props.ingredient.selected ? "marked" : ""}

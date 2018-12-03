@@ -2,6 +2,7 @@ import React from "react";
 
 import PizzaHeader from "./PizzaHeader";
 import PizzaIngredients from "./PizzaIngredients";
+import PizzaTotal from "./PizzaTotal";
 
 class Pizza extends React.Component {
   state = {
@@ -66,7 +67,7 @@ class Pizza extends React.Component {
           ingredients={this.state.ingredients}
           updateIngredient={this.updateIngredient}
         />
-        {/*<PizzaTotal />*/}
+        {<PizzaTotal />}
       </div>
     );
   }

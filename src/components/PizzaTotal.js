@@ -1,3 +1,18 @@
+import React from "react";
+
+class PizzaTotal extends React.Component {
+  render() {
+    return (
+      <div className="score">
+        <span className="label">Total</span>
+        <span className="value" />
+      </div>
+    );
+  }
+}
+
+export default PizzaTotal;
+
 /* TODO: Create the PizzaTotal Component consisting of:
   - A `div` with a class `score`
     - An `span` with class `label`
